@@ -1,4 +1,5 @@
 import { createDiv } from './elmcreator';
+import logoBack from '../img/logo-rodizio.png';
 
 function menuList(items) {
   const list = document.createElement('ul');
@@ -7,7 +8,6 @@ function menuList(items) {
     litem.innerText = element;
     list.appendChild(litem);
   });
-  console.log(list);
   return list;
 }
 const menuItems = [
@@ -21,6 +21,8 @@ const menuItems = [
 
 export default function createHomeContent() {
   const homeContent = createDiv(['jumbotron', 'jumbotron-fluid']);
+  homeContent.style.background = `url('${logoBack}') no-repeat`;
+  homeContent.style.backgroundPosition = 'center center';
   const title = createDiv(['display-4']);
   title.innerText = 'Our Menu Includes';
   const text = createDiv(['lead']);
