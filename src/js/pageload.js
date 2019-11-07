@@ -1,5 +1,7 @@
 import { createDiv, createElem, tabElem, tabContent } from './elmcreator';
 import homeContent from './homeContent';
+import menuContent from './menuContent';
+import aboutContent from './aboutContent';
 import contactContent from './contactContent';
 import logo from '../img/boton-rodizio.png';
 // import logoback from '../img/logo-rodizio.png';
@@ -16,13 +18,20 @@ export default function loadElements() {
   const tabNav = createElem('ul', 'myTab', ['nav', 'nav-tabs']);
   tabNav.setAttribute('role', 'tablist');
   const liHome = tabElem('home', true);
+  const liMenu = tabElem('menu', false);
+  const liAbout = tabElem('about', false);
   const liContact = tabElem('contact', false);
+
   tabNav.appendChild(liHome);
+  tabNav.appendChild(liMenu);
+  tabNav.appendChild(liAbout);
   tabNav.appendChild(liContact);
 
   // Tabs Container
   const tabContainer = createElem('div', 'myTabContent', ['tab-content']);
   const homeContainer = tabContent('home', true);
+  const menuContainer = tabContent('menu', false);
+  const aboutContainer = tabContent('about', false);
   const contactContainer = tabContent('contact', false);
 
   // Content
@@ -33,12 +42,21 @@ export default function loadElements() {
   // Home
   homeContainer.appendChild(homeContent());
 
+  // Menu
+  menuContainer.appendChild(menuContent());
+
+  // About
+  aboutContainer.appendChild(aboutContent());
+
   // contact
   contactContainer.appendChild(contactContent());
 
   // column
   tabContainer.appendChild(homeContainer);
+  tabContainer.appendChild(menuContainer);
+  tabContainer.appendChild(aboutContainer);
   tabContainer.appendChild(contactContainer);
+
   column.appendChild(tabNav);
   column.appendChild(tabContainer);
 }
