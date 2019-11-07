@@ -6,8 +6,8 @@ import menuContent from './menuContent';
 import aboutContent from './aboutContent';
 import contactContent from './contactContent';
 import logo from '../img/boton-rodizio.png';
-// import logoback from '../img/logo-rodizio.png';
-/* eslint import/no-unresolved: [2, { ignore: ['\bootstrap/js/dist/tab$'] }] */
+
+// eslint-disable-next-line import/no-unresolved
 import 'bootstrap/js/dist/tab';
 
 export default function loadElements() {
