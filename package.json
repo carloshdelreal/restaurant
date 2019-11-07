@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "build": "webpack",
-    "lint": "eslint .eslintrc.js --fix",
+    "lint": "eslint src/js/pageload.js --fix",
     "watch": "webpack --watch"
   },
   "repository": {
