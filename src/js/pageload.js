@@ -1,4 +1,6 @@
 import { createDiv, createElem, tabElem, tabContent } from './elmcreator';
+import homeContent from './homeContent';
+import contactContent from './contactContent';
 import logo from '../img/boton-rodizio.png';
 // import logoback from '../img/logo-rodizio.png';
 import 'bootstrap/js/dist/tab';
@@ -29,25 +31,10 @@ export default function loadElements() {
   content.appendChild(column);
 
   // Home
-  const homeContent = createDiv(['jumbotron', 'jumbotron-fluid']);
-  const title = createDiv(['display-4']);
-  title.innerHTML = 'This is Rodizio Restaurant';
-  const text = createDiv(['lead']);
-  text.innerText =
-    'The best place to enjoy high quality meat in the city, you will find the finest slices preparated with absolute mastery.';
-  homeContent.appendChild(title);
-  homeContent.appendChild(text);
-  homeContainer.appendChild(homeContent);
+  homeContainer.appendChild(homeContent());
 
   // contact
-  const contactContent = createDiv(['jumbotron', 'jumbotron-fluid']);
-  const contactTitle = createDiv(['display-4']);
-  contactTitle.innerText = 'Contact us';
-  const contactText = createDiv(['lead']);
-  contactText.innerText = 'Call us soon';
-  contactContent.appendChild(contactTitle);
-  contactContent.appendChild(contactText);
-  contactContainer.appendChild(contactContent);
+  contactContainer.appendChild(contactContent());
 
   // column
   tabContainer.appendChild(homeContainer);
