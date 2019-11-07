@@ -7,7 +7,7 @@ import aboutContent from './aboutContent';
 import contactContent from './contactContent';
 import logo from '../img/boton-rodizio.png';
 // import logoback from '../img/logo-rodizio.png';
-import 'bootstrap/js/dist/tab';
+import '../../node_modules/bootstrap/js/dist/tab';
 
 export default function loadElements() {
   // Navbar
