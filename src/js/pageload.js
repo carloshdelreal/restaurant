@@ -1,4 +1,6 @@
-import { createDiv, createElem, tabElem, tabContent } from './elmcreator';
+import {
+  createDiv, createElem, tabElem, tabContent,
+} from './elmcreator';
 import homeContent from './homeContent';
 import menuContent from './menuContent';
 import aboutContent from './aboutContent';

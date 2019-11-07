@@ -48,4 +48,6 @@ function tabContent(name, main) {
   return elm;
 }
 
-export { createDiv, createElem, tabElem, tabContent };
+export {
+  createDiv, createElem, tabElem, tabContent,
+};
