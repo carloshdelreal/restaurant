@@ -29,6 +29,8 @@ This project was created by:
 
 You can find the development's live version of this project [here](https://rawcdn.githack.com/carloshdelreal/restaurant/5184dcb602030ce2b4d162c80a76c09c6732232b/dist/index.html)
 
+You can find the final solution live version [here, Rodizio Restaurant](https://carloshdelreal.github.io/restaurant/dist/index.html)
+
 # License
 
 All the source code in the [The Odin Project](https://www.theodinproject.com/courses/javascript/lessons/restaurant-page) is available jointly under the MIT License and the Beerware License.
