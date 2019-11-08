@@ -1,4 +1,4 @@
 import './style.scss';
+import load from './js/pageload';
 
-document.querySelector('#content').innerHTML =
-  'Hello form webpack, how are you, fine?';
+load();
